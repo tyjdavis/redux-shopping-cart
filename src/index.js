@@ -6,6 +6,9 @@ import reducer from './reducer';
 import App from './App';
 import './index.css';
 
+const store = createStore(reducer);
+
+
 ReactDOM.render(
   <Provider store={store} >
     <App />

@@ -4,7 +4,7 @@ const CartItem = ({ shirts }) => (
   <ul>
     {shirts.map((shirt, index) => {
       return <ul>
-        <li>{shirt.items}</li>
+        <li>{shirt.name}</li>
             </ul>
     }
   )}

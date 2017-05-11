@@ -13,8 +13,8 @@ function reducer (state = initialState, action) {
   case 'ADD_SHIRT':
     return { ...state, shirts: [...state.shirts, action.shirt] }
   case 'REMOVE_SHIRT':
-    return {...state, shirts: state.shirts.filter((_, index) => index !== action.index)) }
-  // case 'APPLY_TO_JOB':
+    return state.filter((_, index) => index !== action.index)
+  // case 'CALCULATE_TOTAL':
   //   return state.map((shirt, index) => {
   //     if (index === action.index) {
   //       return { ...shirt, applied: true}

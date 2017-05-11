@@ -12,7 +12,7 @@ const mapDispatchtoProps = (dispatch) => {
   return {
     addItem: (shirt) =>  dispatch({ type: 'ADD_SHIRT', shirt }),
     removeItem: (index) =>  dispatch({ type: 'REMOVE_SHIRT', index })
-    calculateTotal: (cost) =>  dispatch({ type: 'CALCULATE_TOTAL', cost })
+    // calculateTotal: (cost) =>  dispatch({ type: 'CALCULATE_TOTAL', cost })
   }
 }
 
